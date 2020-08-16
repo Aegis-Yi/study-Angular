@@ -1,0 +1,44 @@
+<p style="color: #00ccff;">{{title}}</p>
+
+<h2>angular模板里绑定数据</h2>
+<p>{{news}}</p>
+
+<br>
+<h2>angurlar模板里绑定属性</h2>
+<div title="我是一个div">
+  鼠标瞄上去看下
+</div>
+<div>{{message}}</div>
+
+<div [title]="zhangsan">
+  张三
+</div>
+
+<br>
+<h2>angurlar模板里绑定html</h2>
+
+<span [innerHTML]='content' class="red"></span>
+
+<br>
+<h2>angurlar模板里允许做简单的运算</h2>
+
+1+2={{1+2}}
+
+<br>
+<h2>angurlar模板里循环数组</h2>
+<ul>
+  <li *ngFor="let item of arr">
+    {{item}}
+  </li>
+</ul>
+
+<ol>
+  <li *ngFor="let item of car">
+    <h3>{{item.title}}</h3>
+    <ol>
+      <li *ngFor="let car of item.list">
+        {{car.kind}}---{{car.price}}
+      </li>
+    </ol>
+  </li>
+</ol>
