@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Data } from '@angular/router';
 
 @Component({
   selector: 'app-news',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
+
+  constructor() {
+    console.log(this.message);
+    this.message += '----TS';
+   }
   title = '我是一个新闻标题';
 
   public news: any = '我是个新闻类型';
@@ -53,12 +59,31 @@ export class NewsComponent implements OnInit {
     }
   ];
 
-  constructor() {
-    console.log(this.message);
-    this.message += '----TS';
-   }
+  public list: any[] = [
+    {
+      title: '我是新闻1'
+    },
+    {
+      title: '我是新闻2'
+    }, {
+      title: '我是新闻3'
+    }
+  ];
+
+  public flag = true;
+
+  public today: any = new Date();
+
+  keywords: any = '';
 
   ngOnInit(): void {
   }
 
+  run(): void {
+    alert('我是run方法');
+  }
+
+  ckey(): void{
+    this.keywords = '改变keywords';
+  }
 }

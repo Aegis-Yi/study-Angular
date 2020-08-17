@@ -42,3 +42,47 @@
     </ol>
   </li>
 </ol>
+
+<br>
+<h2>angurlar模板里引入图片</h2>
+<img src="assets/img/彩蛋.png" alt="彩蛋">
+
+<br>
+<h2>angurlar模板里显示数组索引</h2>
+<ol>
+  <li *ngFor="let item of list;let k = index">
+  <span *ngIf="k==1" class="red"> {{k}}----{{item.title}} </span>
+  <span *ngIf="k!=1"> {{k}}----{{item.title}}</span>
+</li></ol>
+
+<br>
+<h2>angurlar模板里条件判断 ngif</h2>
+
+<div *ngIf="true">
+  <h4>ng的肯定</h4>
+</div>
+
+<div *ngIf="false">
+  <h4>ng的否定</h4>
+</div>
+
+<br>
+<h2>angurlar模板里管道</h2>
+<p>
+  {{today|date:'yyyy-MM-dd hh:mm:ss'}}
+</p>
+
+<br>
+<h2>angurlar模板里执行事件</h2>
+
+<button (click)="run()">执行事件</button>
+
+<br>
+<h2>双向数据绑定 MVVM</h2>
+
+<input type="text" [(ngModel)]="keywords">
+{{keywords}}
+
+<br>
+<button (click)="ckey()">改变keywords</button>
+
