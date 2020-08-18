@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NewsComponent } from './component/news/news.component';
 import { HomeComponent } from './component/home/home.component';
 import { TitleComponent } from './component/title/title.component';
+import { PerpleComponent } from './perple/perple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsComponent,
     HomeComponent,
-    TitleComponent
+    TitleComponent,
+    PerpleComponent
   ],
   imports: [
     BrowserModule,
