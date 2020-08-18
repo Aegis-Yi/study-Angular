@@ -8,6 +8,7 @@ import { NewsComponent } from './component/news/news.component';
 import { HomeComponent } from './component/home/home.component';
 import { TitleComponent } from './component/title/title.component';
 import { PerpleComponent } from './perple/perple.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PerpleComponent } from './perple/perple.component';
     NewsComponent,
     HomeComponent,
     TitleComponent,
-    PerpleComponent
+    PerpleComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
