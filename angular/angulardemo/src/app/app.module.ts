@@ -10,6 +10,8 @@ import { TitleComponent } from './component/title/title.component';
 import { PerpleComponent } from './perple/perple.component';
 import { TodolistComponent } from './todolist/todolist.component';
 
+import { StorageService } from './services/storage.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +19,14 @@ import { TodolistComponent } from './todolist/todolist.component';
     HomeComponent,
     TitleComponent,
     PerpleComponent,
-    TodolistComponent
+    TodolistComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
