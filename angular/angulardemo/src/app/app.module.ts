@@ -11,6 +11,7 @@ import { PerpleComponent } from './perple/perple.component';
 import { TodolistComponent } from './todolist/todolist.component';
 
 import { StorageService } from './services/storage.service';
+import { ChildComponent } from './component/child/child.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { StorageService } from './services/storage.service';
     TitleComponent,
     PerpleComponent,
     TodolistComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
